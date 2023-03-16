@@ -1,4 +1,5 @@
 import express, { Request, Response, NextFunction } from "express";
+
 import customerRouter from "./routes/customer-route";
 import userRouter from "./routes/user-route";
 
@@ -14,7 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 // });
 
 app.use("/customers", customerRouter);
-app.use("/user", userRouter);
+app.use("/users", userRouter);
 
 app.use("*", (req, res) => {
   res.status(404).send("Not found");

@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node ./dist/index.js",
     "dev": "nodemon ./src/index.ts",
+    "soc": "nodemon ./src/server.ts",
     "build": "tsc -p ."
   },
   "keywords": [],
@@ -13,12 +14,16 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
-    "jsonwebtoken": "^9.0.0"
+    "jsonwebtoken": "^9.0.0",
+    "mssql": "^9.1.1",
+    "socket.io": "^4.6.1"
   },
   "devDependencies": {
     "@types/express": "^4.17.17",
     "@types/jsonwebtoken": "^9.0.1",
+    "@types/mssql": "^8.1.2",
     "@types/node": "^18.15.0",
+    "@types/socket.io": "^3.0.2",
     "nodemon": "^2.0.21",
     "ts-node": "^10.9.1",
     "typescript": "^4.9.5"
